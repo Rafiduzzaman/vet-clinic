@@ -12,6 +12,7 @@
   - [Install](#install)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -85,6 +86,17 @@ Run in PostGreSql 16
 - GitHub: [@Rafiduzzaman](https://github.com/Rafiduzzaman)
 - Twitter: [@rdzaman](https://twitter.com/rdzaman187468)
 - LinkedIn: [@md-rafiduzzaman-nahin](https://www.linkedin.com/in/md-rafiduzzaman-nahin-7431ab1b4/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> This project will have react and JS included for future features
+
+- **[React]**
+- **[JavaScript]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
