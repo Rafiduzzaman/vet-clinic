@@ -17,3 +17,29 @@ VALUES
 ('Blossom', '1998-10-13', 3, TRUE, 17, 'Unknown'),
 ('Ditto', '2022-05-14', 4, TRUE, 22, 'Unknown');
 
+-- This following code is for the third project
+-- Insert data into owners table
+INSERT INTO owners (full_name, age) VALUES
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+-- Insert data into species table
+INSERT INTO species (name) VALUES
+('Pokemon'),
+('Digimon');
+
+-- Modify animals to include species_id and owner_id
+UPDATE animals SET species_id = (CASE WHEN name LIKE '%mon' THEN (SELECT id FROM species WHERE name = 'Digimon') ELSE (SELECT id FROM species WHERE name = 'Pokemon') END);
+
+UPDATE animals SET owner_id = 
+(CASE
+    WHEN name = 'Agumon' THEN (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+    WHEN name = 'Gabumon' OR name = 'Pikachu' THEN (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+    WHEN name = 'Devimon' OR name = 'Plantmon' THEN (SELECT id FROM owners WHERE full_name = 'Bob')
+    WHEN name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom' THEN (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+    WHEN name = 'Angemon' OR name = 'Boarmon' THEN (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+END);
