@@ -1,4 +1,4 @@
--- This part is for creating the animals table
+-- This part is for creating the animals table (1st project)
 
 CREATE TABLE IF NOT EXISTS public.animals
 (
@@ -15,3 +15,9 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.animals
     OWNER to postgres;
+
+
+-- This part is for the updating animal table (2nd project)
+
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(255);
